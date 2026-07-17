@@ -1,16 +1,143 @@
-# React + Vite
+# LoadFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LoadFlow is a modern web application built with **Vite**, **React**, and **Supabase**. It provides a fast, scalable, and secure platform with authentication, database integration, and a responsive user interface.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* User authentication with Supabase
+* Secure user sessions
+* Real-time database integration
+* Fast frontend development using Vite
+* Responsive UI design
+* Environment-based configuration
+* Clean and scalable project structure
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
 
-## Expanding the ESLint configuration
+* React
+* Vite
+* JavaScript / TypeScript
+* CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend & Database
+
+* Supabase
+
+  * Authentication
+  * PostgreSQL Database
+  * API Services
+
+### Deployment
+
+* Vercel
+
+## 📂 Project Structure
+
+```
+loadflow/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── .env
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd loadflow
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure Environment Variables
+
+Create a `.env` file in the root directory:
+
+```
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+Replace the values with your Supabase project credentials.
+
+## ▶️ Running the Project
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will run locally at:
+
+```
+http://localhost:5173
+```
+
+## 🔐 Supabase Configuration
+
+1. Create a project in Supabase.
+2. Enable authentication providers.
+3. Create required database tables.
+4. Add Supabase URL and API key to `.env`.
+5. Restart the development server.
+
+## 📦 Build for Production
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## 🌐 Deployment
+
+The project is deployed using **Vercel**.
+
+Steps:
+
+1. Connect the GitHub repository to Vercel.
+2. Add environment variables in Vercel settings.
+3. Deploy the project.
+
+## 🤝 Contribution
+
+Contributions are welcome. Feel free to fork this repository and submit pull requests.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 👨‍💻 Author
+
+Paresh
